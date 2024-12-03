@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="controls">
+      <input type="file" id="upload" class="upload-btn"/>
+      <button id="rotate">Rotate</button>
+      <button id="resize">Resize</button>
+      <button id="grayscale">Grayscale</button>
+      <button id="sepia">Sepia</button>
+      <button id="blur">Blur</button>
+      <button id="brightness">Brightness</button>
+      <button id="contrast">Contrast</button>
+      <button id="clearFilters">Clear Filters</button>
+      <button id="crop">Crop</button>
+      <button id="clear">Clear Canvas</button>
+      <button id="download">Download</button>
+    </div>
+
+    <div class="progress-bar">
+      <label for="filter-progress">Filter Intensity</label>
+      <input type="range" id="filter-progress" min="0" max="100" value="0" />
+    </div>
+
+    <canvas id="canvas" width="600" height="400"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

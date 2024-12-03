@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.controls {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button, .upload-btn {
+  margin: 5px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover, .upload-btn:hover {
+  background-color: #45a049;
+}
+
+.upload-btn {
+  background-color: #008CBA;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.upload-btn:focus {
+  outline: none;
+}
+
+canvas {
+  border: 2px solid #000;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="range"] {
+  width: 80%;
+  height: 5px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #4CAF50;
+  border-radius: 50%;
+}
+
+input[type="range"]:disabled {
+  background: #ddd;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+#download {
+  background-color: #008CBA;
+  font-size: 14px;
+}
+
